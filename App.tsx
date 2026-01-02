@@ -11,9 +11,8 @@ export default function App() {
       <Text style={styles.textHuge}>{count}</Text>
 
       <FAB
-        label={"-1"}
-        onPress={() => setCount(count - 1)}
-        onLongPress={() => setCount(0)}
+        label={"Reset"}
+        onPress={() => setCount(0)}
         position="left" 
       />
 

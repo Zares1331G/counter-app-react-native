@@ -19,9 +19,10 @@ export default function FAB({
 }: FABProps) {
   return (
     <Pressable
-      style={[
+      style={({pressed})=>[
         styles.floatingButton,
         position === "right" ? styles.positionRight : styles.positionLeft,
+        pressed && {opacity: 0.7}
       ]}
       onPress={onPress}
       onLongPress={onLongPress}
